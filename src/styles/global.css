@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme{
+    --responsive-min-device: 350px;
+    --responsive-max-device: 1420px;
+    --breakpoint-sm: 520px;
+    --breakpoint-md: 720px;
+    --breakpoint-lg: 920px;
+    --breakpoint-xl: 1220px;
+    --breakpoint-2xl: 1420px;
+}
