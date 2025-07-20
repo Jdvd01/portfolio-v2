@@ -9,3 +9,9 @@
     --breakpoint-xl: 1220px;
     --breakpoint-2xl: 1420px;
 }
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
