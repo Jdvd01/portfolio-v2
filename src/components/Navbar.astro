@@ -1,50 +1,27 @@
+---
+import links from "../utils/navbarInfo.json";
+---
+
 <navbar class="pt-4">
 	<ul
 		class="flex items-center mt-4 justify-around py-3 px-8 border-2 border-black"
 	>
-		<li>
-			<a
-				href="#about"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="flex items-center gap-2"
-			>
-				<i class="fa-solid fa-user"></i>
-				<span class="hidden md:block">Perfil</span>
-			</a>
-		</li>
-		<li>
-			<a
-				href="#skills"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="flex items-center gap-2"
-			>
-				<i class="fa-solid fa-brain"></i>
-				<span class="hidden md:block">Perfil</span>
-			</a>
-		</li>
-		<li>
-			<a
-				href="#projects"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="flex items-center gap-2"
-			>
-				<i class="fa-solid fa-user"></i>
-				<span class="hidden md:block">Perfil</span>
-			</a>
-		</li>
-		<li>
-			<a
-				href="#work"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="flex items-center gap-2"
-			>
-				<i class="fa-solid fa-briefcase"></i>
-				<span class="hidden md:block">Perfil</span>
-			</a>
-		</li>
+		{
+			links.map((link) => {
+				return (
+					<li>
+						<a
+							href={link.href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex items-center gap-2"
+						>
+							<i class={`fa-solid ${link.icon}`} />
+							<span class="hidden tablet:block">{link.label}</span>
+						</a>
+					</li>
+				);
+			})
+		}
 	</ul>
 </navbar>
