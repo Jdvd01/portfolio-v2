@@ -3,12 +3,12 @@
 		"name": "github",
 		"icon": "fa-github",
 		"href": "https://github.com/Jdvd01",
-		"color": ""
+		"color": "text-[#F8F9FA]"
 	},
 	{
 		"name": "linkedin",
 		"icon": "fa-linkedin",
 		"href": "https://linkedin.com/in/Jdvd01",
-		"color": ""
+		"color": "text-[#F8F9FA]"
 	}
 ]
