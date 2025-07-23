@@ -1,0 +1,22 @@
+[
+	{
+		"href": "#about",
+		"icon": "fa-user",
+		"label": "Profile"
+	},
+	{
+		"href": "#skills",
+		"icon": "fa-brain",
+		"label": "Skills"
+	},
+	{
+		"href": "#projects",
+		"icon": "fa-project-diagram",
+		"label": "Projects"
+	},
+	{
+		"href": "#work",
+		"icon": "fa-briefcase",
+		"label": "Experience"
+	}
+]
