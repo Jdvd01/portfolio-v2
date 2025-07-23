@@ -1,0 +1,22 @@
+---
+import socialMedia from "../utils/socialMedia.json";
+---
+
+<ul class="flex items-center justify-center gap-4">
+	{
+		socialMedia.map((item) => {
+			return (
+				<li>
+					<a
+						href={item.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex items-center"
+					>
+						<i class={`fa-brands ${item.icon} text-4xl ${item.color}`} />
+					</a>
+				</li>
+			);
+		})
+	}
+</ul>
