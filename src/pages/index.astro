@@ -1,8 +1,12 @@
 ---
+import About from "../components/About.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Navbar />
+	<span class="flex flex-col gap-8">
+		<Navbar />
+		<About />
+	</span>
 </Layout>
