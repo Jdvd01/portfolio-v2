@@ -1,12 +1,13 @@
 ---
 import About from "../components/About.astro";
 import Navbar from "../components/Navbar.astro";
+import AppContainer from "../layouts/AppContainer.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<span class="flex flex-col gap-8">
-		<Navbar />
+	<Navbar />
+	<AppContainer>
 		<About />
-	</span>
+	</AppContainer>
 </Layout>
