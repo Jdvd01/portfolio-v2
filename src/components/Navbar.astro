@@ -2,22 +2,26 @@
 import links from "../utils/navbarInfo.json";
 ---
 
-<navbar class="pt-4">
+<navbar
+	class="min-w-[var(--responsive-min-device)] max-w-[var(--responsive-max-device)] fixed left-0 mx-[5%] mt-4 w-[90%] desktop:w-[80%] desktop:mx-[10%]"
+>
 	<ul
-		class="flex items-center mt-4 justify-around py-3 px-8 border-2 border-black"
+		class="flex items-center justify-around bg-[#2B2D42] rounded-2xl py-4 px-8"
 	>
 		{
 			links.map((link) => {
 				return (
-					<li class="text-[#F8F9FA] text-xl">
+					<li class="text-xl">
 						<a
 							href={link.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex items-center gap-2"
+							class="flex justify-center items-center gap-2"
 						>
-							<i class={`fa-solid ${link.icon}`} />
-							<span class="hidden tablet:block">{link.label}</span>
+							<i class={`fa-solid ${link.icon} text-[#F1C40F]`} />
+							<span class="hidden tablet:block text-[#F8F9FA]">
+								{link.label}
+							</span>
 						</a>
 					</li>
 				);
