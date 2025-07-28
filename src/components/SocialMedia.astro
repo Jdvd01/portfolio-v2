@@ -11,9 +11,9 @@ import socialMedia from "../utils/socialMedia.json";
 						href={item.href}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="flex items-center"
+						class={`flex items-center p-3 rounded-full  bg-[#2B2D42] ${item.color}`}
 					>
-						<i class={`fa-brands ${item.icon} text-4xl ${item.color}`} />
+						<i class={`fa-brands ${item.icon} text-3xl`} />
 					</a>
 				</li>
 			);
