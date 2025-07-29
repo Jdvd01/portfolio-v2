@@ -12,6 +12,8 @@ import socialMedia from "../utils/socialMedia.json";
 						target="_blank"
 						rel="noopener noreferrer"
 						class={`flex items-center justify-center p-3 rounded-full  bg-[#2B2D42] ${item.color}`}
+						aria-labelledby={`${item.name}`}
+						aria-label={`${item.name}`}
 					>
 						<i class={`fa-brands ${item.icon} text-2xl`} />
 					</a>

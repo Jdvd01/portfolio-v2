@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import SocialMedia from "./SocialMedia.astro";
+import ProfileImage from "../../public/img/profile.png";
 ---
 
 <div
-	class="flex flex-col tablet:flex-row gap-4 items-center tablet:items-start tablet:justify-between mt-20 tablet:mt-52 tablet:h-[400px] relative"
+	class="flex flex-col tablet:flex-row gap-4 items-center tablet:items-start tablet:justify-between mt-20 tablet:mt-52 tablet:h-[400px] tablet:relative"
 >
 	<span
 		class="flex flex-col items-start tablet:gap-4 tablet:w-[35%] desktop:w-2/5 desktop:pt-14"
@@ -23,15 +25,17 @@ import SocialMedia from "./SocialMedia.astro";
 
 	<span
 		class="size-64 tablet:w-[380px] tablet:h-[380px]
-		rounded-full -z-10
+		rounded-full
+		tablet:-z-10
 		flex items-end justify-center
 		bg-[#2B2D42]
 		tablet:absolute tablet:left-1/2 tablet:right-0 tablet:top-2/6 tablet:bottom-0 tablet:-translate-1/2"
 	>
-		<img
-			src="/img/profile.png"
-			alt="Jose Velasquez"
-			class="size-50 tablet:size-64"
+		<Image
+			src={ProfileImage}
+			alt="Profile"
+			class="size-50 tablet:size-64 mask-b-from-95% mask-b-to-transparent"
+			loading="eager"
 		/>
 	</span>
 
@@ -54,7 +58,10 @@ import SocialMedia from "./SocialMedia.astro";
 			functional and attractive web applications.
 		</p>
 
-		<a href="#projects" class="hidden tablet:block text-[#F1C40F]"
+		<a
+			href="#projects"
+			aria-labelledby="redirection to projects"
+			class="hidden tablet:block text-[#F1C40F]"
 			>Let's take a look. <i class="fa-solid fa-arrow-right"></i>
 		</a>
 

@@ -17,6 +17,8 @@ import links from "../utils/navbarInfo.json";
 							href={link.href}
 							rel="noopener noreferrer"
 							class="flex justify-center items-center gap-2"
+							aria-labelledby={`${link.label}`}
+							aria-label={`${link.label}`}
 						>
 							<i class={`fa-solid ${link.icon} text-[#F1C40F]`} />
 							<span class="hidden tablet:block text-[#F8F9FA]">
