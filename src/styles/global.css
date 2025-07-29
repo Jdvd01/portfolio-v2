@@ -32,3 +32,12 @@ h5,
 h6 {
 	font-family: "Montserrat", sans-serif;
 }
+
+.horizontal-scroll-container::-webkit-scrollbar {
+	display: none; /* Para Chrome, Safari, Edge */
+}
+
+.horizontal-scroll-container {
+	-ms-overflow-style: none; /* Para Internet Explorer y Edge */
+	scrollbar-width: none; /* Para Firefox */
+}

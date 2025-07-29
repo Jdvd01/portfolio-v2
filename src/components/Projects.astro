@@ -1,0 +1,45 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section class="w-full max-w-[var(--responsive-max-device)]">
+	<div class="flex flex-col justify-center gap-4" id="projects">
+		<h2 class="text-[#F8F9FA] text-2xl tablet:text-4xl tablet:w-full">
+			Projects
+		</h2>
+
+		<div class="w-full overflow-x-auto pb-3">
+			<div class="flex flex-nowrap gap-4">
+				<ProjectCard
+					description=`
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est blanditiis error voluptatibus ratione harum natus ea voluptas odio reiciendis eum, velit ex deserunt quam qui, obcaecati soluta ipsam accusamus.`
+					name="DevCorner"
+					repo="s"
+					web="s"
+				/>
+				<ProjectCard
+					description=`
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est blanditiis error voluptatibus ratione harum natus ea voluptas odio reiciendis eum, velit ex deserunt quam qui, obcaecati soluta ipsam accusamus.`
+					name="Design system"
+					repo="s"
+				/>
+				<ProjectCard
+					description=`
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est blanditiis error voluptatibus ratione harum natus ea voluptas odio reiciendis eum, velit ex deserunt quam qui, obcaecati soluta ipsam accusamus.`
+					name="Blue Medical"
+					web="s"
+				/>
+				<ProjectCard
+					description=`
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est blanditiis error voluptatibus ratione harum natus ea voluptas odio reiciendis eum, velit ex deserunt quam qui, obcaecati soluta ipsam accusamus.`
+					name="Prueba"
+				/>
+				<ProjectCard
+					description=`
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est blanditiis error voluptatibus ratione harum natus ea voluptas odio reiciendis eum, velit ex deserunt quam qui, obcaecati soluta ipsam accusamus.`
+					name="Prueba"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
