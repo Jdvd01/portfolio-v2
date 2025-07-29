@@ -1,0 +1,48 @@
+---
+import SkillIcon from "./SkillIcon.astro";
+import astroindIcon from "../../public/icons/astro.svg";
+import bootstrapIcon from "../../public/icons/bootstrap.svg";
+import chakrauiIcon from "../../public/icons/chakraui.svg";
+import cssIcon from "../../public/icons/css.svg";
+import expressIcon from "../../public/icons/express.svg";
+import flaskIcon from "../../public/icons/flask.svg";
+import gitIcon from "../../public/icons/git.svg";
+import githubIcon from "../../public/icons/github.svg";
+import htmlIcon from "../../public/icons/html.svg";
+import mysqlIcon from "../../public/icons/mysql.svg";
+import nodejsIcon from "../../public/icons/nodejs.svg";
+import postgresqlIcon from "../../public/icons/postgresql.svg";
+import reactIcon from "../../public/icons/react.svg";
+import reduxIcon from "../../public/icons/redux.svg";
+import tailwindIcon from "../../public/icons/tailwind.svg";
+---
+
+<section class="flex flex-col justify-center items-center gap-4" id="skills">
+	<h2
+		class="text-[#F8F9FA] text-2xl tablet:text-4xl text-start w-3/4 tablet:w-full"
+	>
+		Skills
+	</h2>
+
+	<div
+		class="flex justify-start items-center flex-wrap gap-2 tablet:px-0 w-3/4 tablet:w-full tablet:justify-between desktop:justify-between"
+	>
+		<SkillIcon icon={reactIcon} iconName="React" loading="lazy" />
+		<SkillIcon icon={nodejsIcon} iconName="NodeJS" loading="lazy" />
+		<SkillIcon icon={expressIcon} iconName="Express" loading="eager" />
+		<SkillIcon icon={astroindIcon} iconName="Astro" loading="eager" />
+		<SkillIcon icon={gitIcon} iconName="Git" loading="eager" />
+		<SkillIcon icon={githubIcon} iconName="Github" loading="eager" />
+		<SkillIcon icon={bootstrapIcon} iconName="Bootstrap" loading="eager" />
+		<SkillIcon icon={chakrauiIcon} iconName="ChakraUI" loading="eager" />
+		<SkillIcon icon={tailwindIcon} iconName="Tailwind" loading="lazy" />
+		<SkillIcon icon={cssIcon} iconName="CSS" loading="eager" />
+		<SkillIcon icon={flaskIcon} iconName="Flask" loading="eager" />
+		<SkillIcon icon={mysqlIcon} iconName="MySQL" loading="eager" />
+		<SkillIcon icon={postgresqlIcon} iconName="PostgreSQL" loading="lazy" />
+		<SkillIcon icon={reduxIcon} iconName="Redux" loading="lazy" />
+		<SkillIcon icon={htmlIcon} iconName="HTML" loading="eager" />
+
+		<span class="tablet:w-[23%] desktop:hidden"></span>
+	</div>
+</section>
