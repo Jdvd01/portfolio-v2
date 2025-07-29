@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+const { icon, iconName, loading } = Astro.props;
+---
+
+<div
+	class={`flex flex-col justify-center items-center bg-[#2B2D42] rounded-2xl w-fit p-4 basis-[48%] tablet:basis-[23%] desktop:basis-[19%]`}
+>
+	<Image
+		loading={loading}
+		src={icon}
+		alt={`${iconName} icon`}
+		width="40"
+		height="40"
+	/>
+	<p class="text-[#ADB5BD]">{iconName}</p>
+</div>
