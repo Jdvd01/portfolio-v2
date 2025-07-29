@@ -3,7 +3,7 @@ import SocialMedia from "./SocialMedia.astro";
 ---
 
 <div
-	class="flex flex-col tablet:flex-row gap-4 items-center tablet:items-start tablet:justify-between mt-20 tablet:mt-52 tablet:h-[400px]"
+	class="flex flex-col tablet:flex-row gap-4 items-center tablet:items-start tablet:justify-between mt-20 tablet:mt-52 tablet:h-[400px] relative"
 >
 	<span
 		class="flex flex-col items-start tablet:gap-4 tablet:w-[35%] desktop:w-2/5 desktop:pt-14"
@@ -22,7 +22,11 @@ import SocialMedia from "./SocialMedia.astro";
 	</span>
 
 	<span
-		class="size-64 rounded-full mx-auto flex items-end justify-center bg-[#2B2D42] tablet:w-[380px] tablet:absolute tablet:left-[30%] -z-10 tablet:h-[380px] desktop:left-[35%] lgdesktop:left-[38%]"
+		class="size-64 tablet:w-[380px] tablet:h-[380px]
+		rounded-full -z-10
+		flex items-end justify-center
+		bg-[#2B2D42]
+		tablet:absolute tablet:left-1/2 tablet:right-0 tablet:top-2/6 tablet:bottom-0 tablet:-translate-1/2"
 	>
 		<img
 			src="/img/profile.png"
