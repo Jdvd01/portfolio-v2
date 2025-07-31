@@ -33,11 +33,24 @@ h6 {
 	font-family: "Montserrat", sans-serif;
 }
 
-.horizontal-scroll-container::-webkit-scrollbar {
-	display: none; /* Para Chrome, Safari, Edge */
+/* width */
+*::-webkit-scrollbar {
+	height: 0.5rem;
+	width: 0.5rem;
 }
 
-.horizontal-scroll-container {
-	-ms-overflow-style: none; /* Para Internet Explorer y Edge */
-	scrollbar-width: none; /* Para Firefox */
+/* Track */
+*::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background: #adb5bd;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: #2b2d42;
 }
