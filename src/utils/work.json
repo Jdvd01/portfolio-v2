@@ -4,13 +4,13 @@
 		"period": "June 2022 - Present",
 		"role": "Teacher assistant",
 		"web": "https://4geeks.com/",
-		"image": "/public/img/work/4Geeks.png"
+		"image": "/img/work/4Geeks.png"
 	},
 	{
 		"name": "Bluelight Tech",
 		"period": "February 2023 - March 2024",
 		"role": "Frontend web developer",
 		"web": "",
-		"image": "/public/img/"
+		"image": "/img/projects/placeholder.png"
 	}
 ]

@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { icon, iconName, loading } = Astro.props;
+const { iconName, loading } = Astro.props;
 ---
 
 <div
@@ -8,7 +8,7 @@ const { icon, iconName, loading } = Astro.props;
 >
 	<Image
 		loading={loading}
-		src={icon}
+		src={"/icons/" + iconName.toLowerCase() + ".svg"}
 		alt={`${iconName} icon`}
 		width="40"
 		height="40"

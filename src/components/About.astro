@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import SocialMedia from "./SocialMedia.astro";
-import ProfileImage from "/public/img/profile.png";
 ---
 
 <div
@@ -33,10 +32,12 @@ import ProfileImage from "/public/img/profile.png";
 		tablet:absolute tablet:left-1/2 tablet:right-0 tablet:top-2/6 tablet:bottom-0 tablet:-translate-1/2"
 	>
 		<Image
-			src={ProfileImage}
+			src={"/img/profile.png"}
 			alt="Profile"
 			class="size-50 tablet:size-64 mask-b-from-95% mask-b-to-transparent"
 			loading="eager"
+			width="200"
+			height="200"
 		/>
 	</span>
 
