@@ -7,17 +7,17 @@
 		"image": "/public/img/projects/devcorner-hero.png"
 	},
 	{
-		"name": "Design system",
-		"repo": null,
-		"web": null,
-		"status": "Development",
-		"image": "/public/img/projects/placeholder.png"
-	},
-	{
 		"name": "Booklyn",
 		"repo": "https://github.com/Jdvd01/c18-46-t-java-react",
 		"web": null,
 		"status": "Development",
 		"image": "/public/img/projects/booklyn-hero.png"
+	},
+	{
+		"name": "Design system",
+		"repo": null,
+		"web": null,
+		"status": "Development",
+		"image": "/public/img/projects/placeholder.png"
 	}
 ]
