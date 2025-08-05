@@ -8,19 +8,19 @@ import work from "../utils/work.json";
 		Work experience
 	</h2>
 
-	<div
-		class="flex justify-center tablet:justify-start items-center mobile:items-stretch flex-wrap gap-2 tablet:px-0 w-full tablet:w-full"
-	>
-		{
-			work.map((item) => (
-				<WorkCard
-					name={item.name}
-					period={item.period}
-					role={item.role}
-					web={item.web}
-					image={item.image ?? "/public/img/projects/placeholder.png"}
-				/>
-			))
-		}
+	<div class="w-full overflow-x-auto pb-3">
+		<div class="flex flex-nowrap gap-4">
+			{
+				work.map((item) => (
+					<WorkCard
+						name={item.name}
+						period={item.period}
+						role={item.role}
+						web={item.web}
+						image={item.image ?? "/public/img/projects/placeholder.png"}
+					/>
+				))
+			}
+		</div>
 	</div>
 </div>
