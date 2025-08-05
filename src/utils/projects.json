@@ -4,20 +4,20 @@
 		"repo": "https://github.com/4Practica/devCorner",
 		"web": "https://www.devcorner.top/",
 		"status": "Production",
-		"image": "/public/img/devcorner-hero.png"
+		"image": "/public/img/projects/devcorner-hero.png"
 	},
 	{
 		"name": "Design system",
 		"repo": null,
 		"web": null,
 		"status": "Development",
-		"image": "/public/img/placeholder.png"
+		"image": "/public/img/projects/placeholder.png"
 	},
 	{
 		"name": "Booklyn",
 		"repo": "https://github.com/Jdvd01/c18-46-t-java-react",
 		"web": null,
 		"status": "Development",
-		"image": "/public/img/booklyn-hero.png"
+		"image": "/public/img/projects/booklyn-hero.png"
 	}
 ]
