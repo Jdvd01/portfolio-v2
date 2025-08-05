@@ -1,12 +1,10 @@
 ---
 import { Image } from "astro:assets";
 
-const { image, name, status, description, repo, web } = Astro.props;
+const { image, name, status, repo, web } = Astro.props;
 ---
 
-<div
-	class="bg-[#2B2D42] min-w-72 w-72 flex flex-col items-center rounded-2xl overflow-hidden"
->
+<div class="bg-[#2B2D42] min-w-72 w-72 flex flex-col items-center rounded-2xl">
 	<Image
 		src={image}
 		alt=""
