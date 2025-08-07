@@ -54,3 +54,7 @@ h6 {
 *::-webkit-scrollbar-thumb:hover {
 	background: #2b2d42;
 }
+
+.custom-shadow {
+	box-shadow: 0 5px 10px 0 #393b52;
+}
