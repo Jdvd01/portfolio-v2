@@ -4,7 +4,9 @@ import { Image } from "astro:assets";
 const { image, name, status, repo, web } = Astro.props;
 ---
 
-<div class="bg-[#2B2D42] min-w-72 w-72 flex flex-col items-center rounded-2xl">
+<div
+	class="bg-[#2B2D42] min-w-72 w-72 flex flex-col items-center rounded-2xl relative"
+>
 	<Image
 		src={image}
 		alt={`${name} preview`}
@@ -13,14 +15,14 @@ const { image, name, status, repo, web } = Astro.props;
 		height="195"
 	/>
 
+	<span
+		class="bg-[#393B52] text-[#F1C40F] text-sm w-fit rounded-2xl px-3 py-1 absolute top-3 right-3"
+	>
+		{status}
+	</span>
+
 	<div class="flex flex-col items-center flex-1 p-4 gap-4">
 		<p class="text-[#F8F9FA] text-2xl font-semibold">{name}</p>
-
-		<span
-			class="bg-[#393B52] text-[#FFC107] text-sm w-fit rounded-full px-3 py-1"
-		>
-			{status}
-		</span>
 
 		<!-- <p class="text-[#ADB5BD] text-base flex-1 text-pretty">{description}</p> -->
 
