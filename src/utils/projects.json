@@ -4,14 +4,14 @@
 		"repo": "https://github.com/4Practica/devCorner",
 		"web": "https://www.devcorner.top/",
 		"status": "Production",
-		"image": "/img/projects/devcorner-mockup.png"
+		"image": "/img/projects/devcorner-mockup.webp"
 	},
 	{
 		"name": "Booklyn",
 		"repo": "https://github.com/Jdvd01/c18-46-t-java-react",
 		"web": null,
 		"status": "Development",
-		"image": "/img/projects/booklyn-mockup.png"
+		"image": "/img/projects/booklyn-mockup.webp"
 	},
 	{
 		"name": "Design system",
