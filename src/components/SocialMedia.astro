@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import socialMedia from "../utils/socialMedia.json";
-const { size = "24", roundedSize = "full" } = Astro.props;
+const { size = "24", roundedSize = "full", theme } = Astro.props;
 ---
 
 <ul class="flex items-center justify-center gap-4">
@@ -13,7 +13,10 @@ const { size = "24", roundedSize = "full" } = Astro.props;
 						href={item.href}
 						target="_blank"
 						rel="noopener noreferrer"
-						class={`flex items-center justify-center p-3 rounded-${roundedSize}  bg-[#2B2D42] ${item.color}`}
+						class={`flex items-center justify-center p-3 rounded-${roundedSize}  
+							${item.color}
+							${theme == "dark" ? "bg-[#393B52]" : "bg-[#2B2D42]"}
+							`}
 						aria-labelledby={`${item.name}`}
 						aria-label={`${item.name}`}
 					>
