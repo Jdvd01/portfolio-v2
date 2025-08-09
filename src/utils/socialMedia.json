@@ -1,13 +1,11 @@
 [
 	{
 		"name": "github",
-		"icon": "fa-github",
 		"href": "https://github.com/Jdvd01",
 		"color": "text-[#F1C40F]"
 	},
 	{
 		"name": "linkedin",
-		"icon": "fa-linkedin",
 		"href": "https://linkedin.com/in/Jdvd01",
 		"color": "text-[#F1C40F]"
 	}

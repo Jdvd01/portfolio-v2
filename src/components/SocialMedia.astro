@@ -1,6 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import socialMedia from "../utils/socialMedia.json";
-const { size = "2", roundedSize = "full" } = Astro.props;
+const { size = "24", roundedSize = "full" } = Astro.props;
 ---
 
 <ul class="flex items-center justify-center gap-4">
@@ -16,7 +17,13 @@ const { size = "2", roundedSize = "full" } = Astro.props;
 						aria-labelledby={`${item.name}`}
 						aria-label={`${item.name}`}
 					>
-						<i class={`fa-brands ${item.icon} text-${size}xl`} />
+						<Image
+							loading="eager"
+							src={"/icons/social-media/" + item.name + ".svg"}
+							alt={`${item.name} icon`}
+							width={size}
+							height={size}
+						/>
 					</a>
 				</li>
 			);
