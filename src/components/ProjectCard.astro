@@ -37,7 +37,13 @@ const { image, name, status, repo, web } = Astro.props;
 						aria-labelledby={`${name} repository`}
 						aria-label={`${name} repository`}
 					>
-						<i class={`fa-brands fa-github text-2xl`} />
+						<Image
+							loading="lazy"
+							src="/icons/social-media/github.svg"
+							alt="website icon"
+							width="24"
+							height="24"
+						/>
 					</a>
 				)
 			}
@@ -51,7 +57,13 @@ const { image, name, status, repo, web } = Astro.props;
 						aria-labelledby={`${name} website`}
 						aria-label={`${name} website`}
 					>
-						<i class="fa-solid fa-globe text-2xl" />
+						<Image
+							loading="lazy"
+							src="/icons/social-media/browser.svg"
+							alt="website icon"
+							width="24"
+							height="24"
+						/>
 					</a>
 				)
 			}

@@ -18,7 +18,7 @@ const { image, period, web, name, role } = Astro.props;
 		<p class="text-[#ADB5BD] text-base flex-1 text-pretty">{role}</p>
 
 		<span
-			class="bg-[#393B52] text-[#FFC107] text-sm w-fit rounded-full px-3 py-1"
+			class="bg-[#393B52] text-[#F8F9FA] text-sm w-fit rounded-full px-3 py-1"
 		>
 			{period}
 		</span>
@@ -34,7 +34,13 @@ const { image, period, web, name, role } = Astro.props;
 						aria-labelledby={`${name} website`}
 						aria-label={`${name} website`}
 					>
-						<i class="fa-solid fa-globe text-2xl" />
+						<Image
+							loading="lazy"
+							src="/icons/social-media/browser.svg"
+							alt="website icon"
+							width="24"
+							height="24"
+						/>
 					</a>
 				)
 			}
