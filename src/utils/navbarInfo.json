@@ -18,5 +18,10 @@
 		"href": "#work",
 		"icon": "fa-briefcase",
 		"label": "Experience"
+	},
+	{
+		"href": "#contact",
+		"icon": "fa-envelope",
+		"label": "Contact"
 	}
 ]
