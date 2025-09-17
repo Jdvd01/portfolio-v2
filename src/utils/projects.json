@@ -14,10 +14,24 @@
 		"image": "/img/projects/booklyn-mockup.webp"
 	},
 	{
+		"name": "QuizApp",
+		"repo": "https://github.com/Jdvd01/quiz-app-frontend",
+		"web": null,
+		"status": "Deploying",
+		"image": "/img/projects/quiz-app-mockup.webp"
+	},
+	{
+		"name": "Condo mgmt",
+		"repo": "https://github.com/Jdvd01/condo-management-backend",
+		"web": null,
+		"status": "Development",
+		"image": "/img/work-in-progress.webp"
+	},
+	{
 		"name": "Design system",
 		"repo": null,
 		"web": null,
 		"status": "Development",
-		"image": "/img/projects/placeholder.png"
+		"image": "/img/work-in-progress.webp"
 	}
 ]

@@ -16,15 +16,13 @@ const { image, name, status, repo, web } = Astro.props;
 	/>
 
 	<span
-		class="bg-[#393B52] text-[#F1C40F] text-sm w-fit rounded-2xl px-3 py-1 absolute top-3 right-3"
+		class="bg-[#393B52] text-[#F1C40F] text-sm w-fit rounded-2xl px-3 py-1 absolute top-40 right-3"
 	>
 		{status}
 	</span>
 
-	<div class="flex flex-col items-center flex-1 p-4 gap-4">
-		<p class="text-[#F8F9FA] text-2xl font-semibold">{name}</p>
-
-		<!-- <p class="text-[#ADB5BD] text-base flex-1 text-pretty">{description}</p> -->
+	<div class="flex flex-col items-center flex-1 p-4 gap-4 justify-between">
+		<p class="text-[#F8F9FA] text-2xl text-center font-semibold">{name}</p>
 
 		<div class="flex justify-center gap-4">
 			{
